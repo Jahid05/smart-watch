@@ -1,10 +1,16 @@
 @media screen and (max-width: 576px) {
-    .banner, .latest-watches , .watch-box{
+
+    .banner,
+    .latest-watches,
+    .watch-box,
+    .customer-reviews,
+    .subscribes {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .banner-content {
         display: flex;
-        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
 
@@ -15,39 +21,85 @@
     .banner-description {
         font-size: 12px;
     }
+
     .search-icon img {
         width: 16px;
         height: 16px;
     }
+
+    .subs-img {
+        display: flex;
+        justify-content: center;
+    }
+
     .banner-img img {
         width: 90%;
         height: 90%;
     }
 
+    .customer-card {
+        display: block;
+    }
+
+    .subscribes {
+        padding: 10px;
+    }
+
+    .input-form {
+        width: 100%;
+        padding: 5px 5px 5px 8px;
+    }
+
+    .subs-img img {
+        width: 80%;
+    }
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .banner , .latest-watches{
+
+    .banner,
+    .latest-watches,
+    .customer-reviews,
+    .subscribes {
         grid-template-columns: repeat(1, 1fr);
 
     }
+
     .watch-box {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .banner-title {
         font-size: 50px;
     }
+
     .banner-content {
         margin: 20px 30px;
     }
+
     .banner-search {
         width: 100%;
         border-radius: 10px;
-        padding: 5px 5px 5px
-    px
-     15px;
+        padding: 5px 5px 5px px 15px;
     }
 
+    .subscribes {
+        padding: 10px;
+    }
 
+    .input-form {
+        width: 100%;
+        padding: 5px 5px 5px 8px;
+    }
+
+    .subs-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .subs-img img {
+        width: 40%;
+    }
 
 }
