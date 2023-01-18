@@ -145,10 +145,27 @@ section {
     gap: 20px;
 }
 
-.latest-watch {
+.latest-watch-1 {
     display: flex;
     gap: 26px;
     padding: 45px 40px;
+    background: linear-gradient(45deg,#E1A2B8 ,#9F2BC1);
+    box-shadow: 20px 20px 60px rgba(177, 175, 175, 0.308), -20px -20px 60px rgba(216, 216, 216, 0.452);
+    border-radius: 20px;
+}
+.latest-watch-2 {
+    display: flex;
+    gap: 26px;
+    padding: 45px 40px;
+    background: linear-gradient(45deg,#FF9F4A ,#FF3C83);
+    box-shadow: 20px 20px 60px rgba(177, 175, 175, 0.308), -20px -20px 60px rgba(216, 216, 216, 0.452);
+    border-radius: 20px;
+}
+.latest-watch-3 {
+    display: flex;
+    gap: 26px;
+    padding: 45px 40px;
+    background: linear-gradient(45deg,#FD297A ,#9424F0);
     box-shadow: 20px 20px 60px rgba(177, 175, 175, 0.308), -20px -20px 60px rgba(216, 216, 216, 0.452);
     border-radius: 20px;
 }
@@ -156,13 +173,13 @@ section {
 .latest-watch-info h2 {
     font-weight: 700;
     font-size: 36px;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .latest-watch-info p {
     font-weight: 500;
     font-size: 16px;
-    color: var(--gray-color);
+    color: var(--light-color);
 }
 
 /* Products Section */
