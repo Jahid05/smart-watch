@@ -15,46 +15,70 @@
     *******************************-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <!--***************************
+            Bootstrap Link
+    *******************************-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="header">
-        <!--***************************
-                    Nav Bar
-        *******************************-->
         <section class="container">
-            <nav class="nav-bar">
-                <div class="nav-brand">
-                    <img src="./images/logo.png" alt="">
-                </div>
-                <div class="nav-menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Brands</li>
-                        <li>Recent Products</li>
-                        <li>Contact</li>
-                        <li>About</li>
+            <!--***************************
+                    Nav Bar
+            *******************************-->
+            <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Apple</a></li>
+                          <li><a class="dropdown-item" href="#">Samsung</a></li>
+                          <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                          <li><a class="dropdown-item" href="#">Huawei</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Recent Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
                     </ul>
+                    <div class="nav-icons d-flex">
+                      <img src="./images/icon/search.png" alt="">
+                      <img src="./images/icon/person.png" alt="">
+                      <img src="./images/icon/shopping-cart.png" alt="">
+                    </>
+                  </div>
                 </div>
-                <div class="nav-icons">
-                    <div class="icon">
-                        <img src="./images/icon/search.png" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="./images/icon/person.png" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="./images/icon/shopping-cart.png" alt="">
-                    </div>
-                </div>
-            </nav>
+              </nav>
+            <!--***************************
+                    Banner Section
+            *******************************-->
             <div class="banner">
                 <div class="banner-content">
                     <h1 class="banner-title">
                         Discover Most<br> Suitable<br> Watches
                     </h1>
                     <p class="banner-description">
-                        Find the best, reliable, and cheap smart watches here.<br> We focus on product quality. Here you can
+                        Find the best, reliable, and cheap smart watches here.<br> We focus on product quality. Here you
+                        can
                         find smart <br> watches of almost all brands. So why you are waiting?<br> Just order now!
                     </p>
                     <div class="banner-search">
@@ -62,7 +86,7 @@
                             <img src="./images/icon/black-search.png" alt="">
                         </span>
                         <input type="search" placeholder="Find the best brands">
-                        <button class="search-btn">Search</button>
+                        <button class="btn">Search</button>
                     </div>
                 </div>
                 <div class="banner-img">
@@ -85,7 +109,157 @@
                         </div>
                         <div class="latest-watch-info">
                             <h2 class="">Apple</h2>
+                            <p>Apple is one of the most famous smart watches providing company.</p>
                         </div>
+                    </div>
+                    <div class="latest-watch">
+                        <div class="latest-img">
+                            <img src="./images/latest/latest-3.png" alt="">
+                        </div>
+                        <div class="latest-watch-info">
+                            <h2 class="">Xiaomi</h2>
+                            <p>With a slim square body and a 2.5D curved glass that melts delicately and naturally.</p>
+                        </div>
+                    </div>
+                    <div class="latest-watch">
+                        <div class="latest-img">
+                            <img src="./images/latest/latest-2.png" alt="">
+                        </div>
+                        <div class="latest-watch-info">
+                            <h2 class="">Huawei</h2>
+                            <p>HUAWEI WATCH GT series is always exploring the limits of smart watch battery life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="products">
+                <p class="section-description">
+                    Find your favourite smart watch.
+                </p>
+                <h1 class="section-title">
+                    Our Latest Products
+                </h1>
+                <div class="product-container">
+                    <div class="watch-box">
+                        <div class="watch-card">
+                            <div class="card-img">
+                                <img src="./images/watches/watch-1.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="product-title">Apple Smart I</h3>
+                                <div class="rateing">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p><span><del>$450</del></span> $399</p>
+                                </div>
+                                <button class="add-cart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="watch-card">
+                            <div class="card-img">
+                                <img src="./images/watches/watch-2.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="product-title">Apple Smart II</h3>
+                                <div class="rateing">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p><span><del>$499</del></span> $399</p>
+                                </div>
+                                <button class="add-cart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="watch-card">
+                            <div class="card-img">
+                                <img src="./images/watches/watch-3.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="product-title">Apple Smart III</h3>
+                                <div class="rateing">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p><span><del>$499</del></span> $399</p>
+                                </div>
+                                <button class="add-cart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="watch-card">
+                            <div class="card-img">
+                                <img src="./images/watches/watch-4.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="product-title">Apple Smart IV</h3>
+                                <div class="rateing">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p><span><del>$400</del></span> $350</p>
+                                </div>
+                                <button class="add-cart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="watch-card">
+                            <div class="card-img">
+                                <img src="./images/watches/watch-6.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="product-title">Fitbit Max 1</h3>
+                                <div class="rateing">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p><span><del>$499</del></span> $399</p>
+                                </div>
+                                <button class="add-cart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="watch-card">
+                            <div class="card-img">
+                                <img src="./images/watches/watch-5.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="product-title">Samsung Watch Pro</h3>
+                                <div class="rateing">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    <p><span><del>$499</del></span> $399</p>
+                                </div>
+                                <button class="add-cart">Add Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="section-btn">View More</button>
                     </div>
                 </div>
             </div>
@@ -98,8 +272,18 @@
 
     <!--***************************
                     Script 
-        *******************************-->
+    *******************************-->
+
+    <!--***************************
+        Fontawesome CDN Link
+    *******************************-->
     <script src="https://kit.fontawesome.com/c6fb2a5cc0.js" crossorigin="anonymous"></script>
+    <!--***************************
+        Bootstrap CDN Link
+    *******************************-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
