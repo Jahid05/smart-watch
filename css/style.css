@@ -13,7 +13,7 @@
                 Utility
 ****************************************/
 :root {
-    --main-color: #E6425E;
+    --main-color: #DB0B5F;
     --light-color: #F6F6F6;
     --bg-color: #FFFFFF;
     --gray-color: #d1d1d1;
@@ -43,8 +43,10 @@ section {
     margin: 0 10px;
 }
 
-.nav-icons img {
+.nav-icons i {
     margin: 0 8px;
+    font-size: 18px;
+    color: var(--light-color);
 }
 .dropdown-item:active {
     color: #fff;
@@ -91,9 +93,8 @@ section {
     padding: 10px 10px 10px 20px;
 }
 
-.search-icon img {
-    width: 20px;
-    height: 20px;
+.search-icon i {
+    font-size: 22px;
 }
 
 .banner-search input {
@@ -110,18 +111,18 @@ section {
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     padding: 10px 22px;
     color: var(--light-color);
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
     background-color: var(--main-color);
     transition: 0.3s all linear;
 }
 
 .banner-search .btn:hover {
     color: var(--main-color);
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
     background: transparent;
 }
 
@@ -225,7 +226,6 @@ section {
 
 .watch-card {
     background: var(--light-color);
-    border: 2px solid var(--bg-color);
     padding-top: 20px;
     border-radius: 20px;
 }
@@ -264,7 +264,7 @@ section {
     border: none;
     border-radius: 10px;
     background-color: var(--main-color);
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
     width: 100%;
     font-size: 20px;
     font-weight: 700;
@@ -274,7 +274,7 @@ section {
 }
 
 .buy-now:hover {
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
     background-color: transparent;
     color: var(--main-color);
 }
@@ -283,7 +283,7 @@ section {
     border: none;
     border-radius: 10px;
     background-color: var(--dark-color);
-    border: 2px solid var(--dark-color);
+    border: 3px solid var(--dark-color);
     width: 100%;
     font-size: 20px;
     font-weight: 700;
@@ -293,7 +293,7 @@ section {
 }
 
 .add-cart:hover {
-    border: 2px solid var(--dark-color);
+    border: 3px solid var(--dark-color);
     background-color: transparent;
     color: var(--dark-color);
 }
@@ -309,7 +309,7 @@ section {
     justify-content: center;
     border: none;
     border-radius: 10px;
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
     background-color: var(--main-color);
     font-size: 20px;
     font-weight: 700;
@@ -319,7 +319,7 @@ section {
 }
 
 .section-btn:hover {
-    border: 2px solid var(--main-color);
+    border: 3px solid var(--main-color);
     background-color: transparent;
     color: var(--main-color);
 }
